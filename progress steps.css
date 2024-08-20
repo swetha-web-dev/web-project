@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+:root{
+  --line-fill-color:#3498db;
+  --line-empty-color:#e0e0e0;
+}
+
+
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  font-style: normal;
+  height: 100vh;
+  background-color: #fff;
+  margin: 0;
+  background: linear-gradient(120deg,#ffafbd, #ffc3a0);
+}
+
+.container{
+
+  text-align: center;
+}
+
+.progress-container{
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  width: 500px;
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+
+.progress-container::before{
+  content: '';
+  background-color: var(--line-empty-color);
+  position: absolute;
+  top: 50%;
+  left:0;
+  font-weight: bold;
+  height:4px;
+  width: 0%;
+  transform: translate(-50%);
+  z-index: -1; 
+}
+
+
+.progress{
+  background-color: var(--line-fill-color);
+  position: absolute;
+  top: 50%;
+  left:0;
+  font-weight: bold;
+  height:4px;
+  width: 100%;
+  transform: translatey(-50%);
+  z-index: -1; 
+  transition: 0.4s ease;  
+}
+
+
+.circle{
+  background-color: #fff;
+  border-radius: 50%;
+  color: #e2e2e2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  border: 3px solid var(--line-empty-color);
+  transition: 0.4s ease;
+  color: black;
+  font-family: inherit;
+  font-weight: 500;
+}
+
+  .circle.active{
+    border-color: var(--line-fill-color)
+  }
+
+  .btn{
+    background-color: var(--line-fill-color);
+    padding: 10px 25px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 0;
+    border-radius: 5px;
+  }
+
+  .btn:active{
+    transform: scale(0.98);
+  }
+
+  .btn:focus{
+    outline: 0;
+    
+  }
+
+  .btn:disabled{
+    background-color: var(--line-empty-color);
+    cursor: not-allowed;
+  }
