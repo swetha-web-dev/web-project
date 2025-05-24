@@ -1,0 +1,65 @@
+.head{
+    background-color: rgb(47, 26, 205);
+
+   
+     
+}
+.wheat{
+    color: white;
+    margn: 0;
+    text-align: center;
+    padding: 10px;
+}
+.p1{
+    margin: 20px;
+}
+.p2{
+    margin: 20px;
+}
+img{
+  display: block;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: auto;
+  max-height: 500px;
+  width: 500px;
+  border-radius: 10px;
+  object-fit: cover;
+  max-width: 100%;
+
+
+
+
+}
+.Tribute{
+    margin: 30px;
+}
+.Tri{
+    max-width: 900px;
+    width: 100%;
+    background-color: bisque;
+    padding: 20px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    
+}
+.Achivements{
+    background-color: bisque;
+    border-radius: 50px;
+    padding: 10px;
+    margin-top: 20px;
+    margin: 30px;
+}
+body{
+    background-color:white;
+    border-color: black;
+    border-radius: 5px;
+}
+.foot{
+    background-color: rgb(47, 26, 205);
+    color: white;
+    padding: 2px;
+    border-radius: 2px;
+    margin-top: 50px;
+    text-align: center;
+}
